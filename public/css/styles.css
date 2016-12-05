@@ -1,0 +1,32 @@
+body{
+  background-color: #e6f2ff;
+
+}
+#main-content{
+  font-family: sans-serif;
+  text-align: center;
+  align-items: center;
+}
+#sub-content{
+  font-family: sans-serif;
+  margin: auto;
+  width:50%;
+}
+input, textarea{
+  font-family: sans-serif;
+  padding: 8px;
+}
+input[type="submit"] {
+  background-color: #006666;
+  color: white;
+  border: none;
+}
+#submit-div{
+  text-align: center;
+}
+input[type="radio"]{
+  margin-left: 18px;
+}
+.content{
+  white-space:pre;
+}

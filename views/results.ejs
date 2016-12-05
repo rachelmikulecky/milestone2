@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Sorting Quiz</title>
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>Pottermore Sorting Quiz</h1>
+      <h2><% if(gryf >= slyt && gryf >= huff && gryf >= rave){ %>
+          GRYFFINDOR!
+        <% } else if(slyt >= gryf && slyt >= huff && slyt >= rave){ %>
+          SLYTHERIN!
+        <% } else if(huff >= slyt && huff >= gryf && huff >= rave){ %>
+          HUFFLEPUFF!
+        <% } else{ %>
+          RAVENCLAW!
+        <% } %>
+      </h2>
+    <p>Gryffindor: <%= parseInt(gryf) %></p>
+    <p>Hufflepuff: <%= parseInt(huff) %></p>
+    <p>Ravenclaw: <%= parseInt(rave) %></p>
+    <p>Slytherin: <%= parseInt(slyt) %></p>
+    </div>
+  </body>
+</html>
