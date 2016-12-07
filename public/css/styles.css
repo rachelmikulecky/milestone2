@@ -1,6 +1,6 @@
 body{
-  background-color: #e6f2ff;
-
+  background-color: #4d4d4d;
+  color: white;
 }
 #main-content{
   font-family: sans-serif;
@@ -17,7 +17,7 @@ input, textarea{
   padding: 8px;
 }
 input[type="submit"] {
-  background-color: #006666;
+  background-color: #800000;
   color: white;
   border: none;
 }
@@ -29,4 +29,7 @@ input[type="radio"]{
 }
 .content{
   white-space:pre;
+}
+a{
+  color: white;
 }

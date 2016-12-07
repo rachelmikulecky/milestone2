@@ -7,21 +7,27 @@
   </head>
   <body>
     <div id="main-content">
-      <h1>Pottermore Sorting Quiz</h1>
-      <h2><% if(gryf >= slyt && gryf >= huff && gryf >= rave){ %>
-          GRYFFINDOR!
-        <% } else if(slyt >= gryf && slyt >= huff && slyt >= rave){ %>
-          SLYTHERIN!
-        <% } else if(huff >= slyt && huff >= gryf && huff >= rave){ %>
-          HUFFLEPUFF!
-        <% } else{ %>
-          RAVENCLAW!
-        <% } %>
-      </h2>
-    <p>Gryffindor: <%= parseInt(gryf) %></p>
-    <p>Hufflepuff: <%= parseInt(huff) %></p>
-    <p>Ravenclaw: <%= parseInt(rave) %></p>
-    <p>Slytherin: <%= parseInt(slyt) %></p>
+      <% if(gryf >= slyt && gryf >= huff && gryf >= rave){ %>
+        <h1>GRYFFINDOR!</h1>
+        <img src="/Gryffindor_Crest.png" alt="Gryffindor Crest">
+      <% } else if(slyt >= gryf && slyt >= huff && slyt >= rave){ %>
+        <h1>SLYTHERIN!</h1>
+        <img src="/Slytherin_Crest.png" alt="Slytherin Crest">
+      <% } else if(huff >= slyt && huff >= gryf && huff >= rave){ %>
+        <h1>HUFFLEPUFF!</h1>
+        <img src="/Hufflepuff_Crest.png" alt="Hufflepuff Crest">
+      <% } else{ %>
+        <h1>RAVENCLAW!</h1>
+        <img src="/Ravenclaw_Crest_.png" alt="Ravenclaw Crest">
+      <% } %>
+      <h3>Score Break Up:</h3>
+      <p>Gryffindor: <%= parseInt(gryf) %></p>
+      <p>Hufflepuff: <%= parseInt(huff) %></p>
+      <p>Ravenclaw: <%= parseInt(rave) %></p>
+      <p>Slytherin: <%= parseInt(slyt) %></p>
+
+      <br>
+      <a href="<%= url %>">Distribution Graph</a>
     </div>
   </body>
 </html>
