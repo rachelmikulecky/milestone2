@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Distribution Graph</title>
+  </head>
+  <body>
+    <div id="myDiv"></div>
+    <% if(data && layout){ %>
+      <script>
+        var data1 = <%- JSON.stringify(data) %>;
+        var layout1 = <%- JSON.stringify(layout) %>;
+        Plotly.newPlot('myDiv', data1, layout1);
+      </script>
+    <%}%>
+  </body>
+</html>

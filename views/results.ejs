@@ -27,7 +27,9 @@
       <p>Slytherin: <%= parseInt(slyt) %></p>
 
       <br>
-      <a href="<%= url %>">Distribution Graph</a>
+      <form action="/graph" method="get">
+        <input type="submit" value="Graph">
+      </form>
     </div>
   </body>
 </html>
