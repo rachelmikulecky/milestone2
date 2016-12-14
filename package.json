@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "prestart": "psql -U postgres -f sorting.sql",
-    "start": "node app.js"
+    "start": "nodejs app.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
